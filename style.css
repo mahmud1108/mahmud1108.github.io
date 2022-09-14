@@ -1,0 +1,251 @@
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(248, 143, 161);
+  margin-block: 10px;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 100vw;
+}
+
+body {
+  background-color: rgb(248, 143, 161);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* klik-tulisan */
+/* .tulisan-klik {
+  margin-top: 50%;
+  text-align: center;
+} */
+a.klik-tulisan {
+  text-decoration: none;
+  color: black;
+  font-family: "Edu QLD Beginner";
+  font-weight: bold;
+  font-size: 20px;
+  z-index: -999;
+}
+
+/* container1 */
+.container1 {
+  display: none;
+}
+
+/* cake */
+
+.container {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.cake {
+  height: 70px;
+  width: 180px;
+  background-color: #fcf18e;
+  position: absolute;
+}
+.c1 {
+  bottom: 0;
+  left: 60px;
+}
+.c2 {
+  transform: scale(0.8);
+  left: 60px;
+  bottom: 63px;
+  z-index: -1;
+}
+.c3 {
+  transform: scale(0.6);
+  left: 60px;
+  bottom: 112px;
+  z-index: -2;
+}
+.cream {
+  height: 10px;
+  width: 180px;
+  background-color: #fa406b;
+  position: absolute;
+  top: 30px;
+}
+.topping div {
+  width: 26px;
+  height: 12.5px;
+  background-color: #fbd028;
+  border-radius: 0 0 26px 26px;
+  position: absolute;
+}
+.topping div:nth-child(1) {
+  left: -2px;
+}
+.topping div:nth-child(2) {
+  left: 26px;
+}
+.topping div:nth-child(3) {
+  left: 52px;
+}
+.topping div:nth-child(4) {
+  left: 78px;
+}
+.topping div:nth-child(5) {
+  left: 104px;
+}
+.topping div:nth-child(6) {
+  left: 130px;
+}
+.topping div:nth-child(7) {
+  left: 156px;
+}
+.cherry div {
+  background-color: #f7174c;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: -18px;
+  border-radius: 50%;
+}
+.cherry div:nth-child(1) {
+  left: 8px;
+}
+.cherry div:nth-child(2) {
+  left: 40px;
+}
+.cherry div:nth-child(3) {
+  left: 70px;
+}
+.cherry div:nth-child(4) {
+  left: 100px;
+}
+.cherry div:nth-child(5) {
+  left: 130px;
+}
+.cherry div:nth-child(6) {
+  left: 160px;
+}
+.lilin a.tulisan-lilin {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: red;
+  font-size: 60px;
+  position: absolute;
+  left: 39.5%;
+  top: 22%;
+  z-index: -3;
+}
+.api1 .wrapper {
+  position: absolute;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  transform: scale(0.3);
+}
+.api1 .flame1 {
+  top: -104.2%;
+  left: 41%;
+}
+.api1 .flame2 {
+  top: -104.2%;
+  left: 52.5%;
+}
+.api1 .red {
+  height: 80px;
+  width: 80px;
+  background-color: orangered;
+  box-shadow: 0 0 10px 5px orangered;
+}
+.api1 .orange {
+  left: 10px;
+  height: 60px;
+  width: 60px;
+  background-color: orange;
+  box-shadow: 0 0 12px 6px orange;
+}
+.api1 .gold {
+  left: 18px;
+  height: 45px;
+  width: 45px;
+  background-color: gold;
+  box-shadow: 0 0 9px 4px gold;
+}
+.api1 .white {
+  left: 22px;
+  height: 35px;
+  width: 35px;
+  background-color: lightyellow;
+  box-shadow: 0 0 9px 4px lightyellow;
+}
+.api1 .flame-wrapper {
+  position: relative;
+  animation: flicker 3ms ease-in infinite;
+}
+.api1 .flame {
+  bottom: 0;
+  position: absolute;
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+}
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(2deg) scaleY(1.05);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg) scaleY(0.9);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+/* Love */
+
+.love {
+  font-size: 700px;
+  color: whitesmoke;
+  position: absolute;
+  top: -42%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+  text-shadow: 1px 1px 5px rgb(119, 119, 119);
+}
+
+/* ucapan */
+
+.ucapan {
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+  color: whitesmoke;
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-shadow: 1px 1px 5px rgb(119, 119, 119);
+}
+.apii {
+  display: none;
+}
